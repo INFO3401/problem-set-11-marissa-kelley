@@ -54,7 +54,7 @@ def runTTest(ivA, ivB, dv):
     print(ttest)
 
 #Run ANOVA
-def runAnova(data, forumula):
+def runAnova(data, formula):
     model = ols(formula, data).fit()
     #create a model using ordinal lease squares forumlation using a formula and my data
     #predescribed relationship between DV and how they allow me to predict my IV, so I want to adjust weights in model so that
@@ -80,7 +80,7 @@ runTTest(men, women, 'Admitted') #column with admissions counts
 
 #test stat result: 5.332277756733584
 #p value result: 0.001774285663548817 
-#Suggest that there is a significant correlation here because p is less than 0.5.
+#This suggests that there is a significant correlation here because p is less than 0.5.
 
     
 print("Does department correlate with admissions?")
@@ -97,7 +97,7 @@ runAnova(rawData, moreComplex)
 
 #DV: Admitted
 #IV: Department
-#IV: 
+#IV: Gender
 
 #Both have p-values of less than 
 
@@ -111,12 +111,10 @@ runAnova(rawData, moreComplex)
 
 #PROBLEM 4. The data also represents an example of Simpson's Paradox. Use whatever visualization tools you'd like to illustrate the two possible perspectives. Make sure to include a screenshot of each and explain the perspective shown in each. 
 
+#Visuals submitted on another document in Jupyter Notebook
 
+################################################################################
+# WEDNESDAY AND FRIDAY 11.28 & 11.30 
+################################################################################
 
-#Some scholars contend that Shakespeare's early plays are actually collaborations that could be attributed to other authors. One such author is Christopher Marlow (1564-1593). Use a series of visualizations to compare data from Marlowe's plays and Shakespeare's plays. The zip file in Assignment Data contains CSV data looking at both sentiment and word counts comparing plays from the two authors. Use the data and Altair to work through the following problems (submit your notebook with additional documentation addressing each question): 
-
-#PROBLEM 5. Build a visualization that allows you to compare the distribution of positive sentiment in both Marlowe and Shakespeare. What does this tell you about the styles of the two authors?
-
-#PROBLEM 6. Build a visualization that allows you to explore the correlation of word counts for Marlowe and Shakespeare. What does this tell you about the styles of the two authors? 
-
-#PROBLEM 7. Generate three additional visualizations using this data (please use different visualization techniques for each visualization). What do these visualizations tell you about potential collaborations between Shakespeare and Marlowe? 
+#On Jupyter Notebook
