@@ -99,7 +99,8 @@ runAnova(rawData, moreComplex)
 #IV: Department
 #IV: Gender
 
-#Both have p-values of less than 
+
+#Based on this data, it looks like the data is not biased because there are no huge factors that contribute to a change in admission. 
 
 ################################################################################
 # MONDAY 11.26
@@ -109,7 +110,7 @@ runAnova(rawData, moreComplex)
 
 #The issue was that there was a space after male for a few of the spaces. This resulted in skewed results because it only picked up the "male" without a space (only 2 of them instead of 7 of them). A way to correct this is either to edit the CSV itself or make the men = df[(df['Gender] == 'Male)] also equal to 'Male '. For the question "Does department correlate with admission", both results stayed the same, however for the t-test (which is the statistic and p-value) changed with the altered data. 
 
-#PROBLEM 4. The data also represents an example of Simpson's Paradox. Use whatever visualization tools you'd like to illustrate the two possible perspectives. Make sure to include a screenshot of each and explain the perspective shown in each. 
+#PROBLEM 4. The data also represents an example of Simpson's Paradox. Use whatever visualization tools you'd like to illustrate the two possible perspectives. Make sure to include a screenshot of each and explain the perspective shown in each.  
 
 #Visuals submitted on another document in Jupyter Notebook
 
